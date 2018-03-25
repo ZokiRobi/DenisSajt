@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark " id="nav-main">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+                        true}">Pocetna
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/projekti']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+                        true}">Projekti</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/biografija']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+                        true}">Biografija</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</nav>

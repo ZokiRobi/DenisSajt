@@ -1,0 +1,24 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4 projekti">
+      <ul *ngIf="!mobileQuery.matches" style="position:fixed">
+        <li *ngFor="let projekat of projekti; let i = index">
+          <a [ngx-scroll-to]="'#' + projekat.Name" (click)="setClass(i)" [ngClass]="{'active': status === i}">{{projekat.Name}}</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-10  col-sm-9 col-md-6">
+      <div *ngFor="let projekat of projekti" class="" id="projekat">
+        <h4 class="text-center pt-3" id="{{projekat.Name}}">{{ projekat.Name }}</h4>
+        <app-projekat [projekat]="projekat"></app-projekat>
+      </div>
+    </div>
+    <div class="col-1 col-sm-1 top-btn">
+      <a [ngx-scroll-to]="'#nav-main'" class="btn btn-secondary" name="Top" id="btntop" style="display:none" #btntop>&uarr;</a>
+    </div>
+  </div>
+</div>
+<footer class="d-flex justify-content-center">
+  <p>&copy; Denis Tadic 2018</p>
+</footer>

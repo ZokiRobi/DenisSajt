@@ -1,0 +1,16 @@
+section#cover{
+    background: url('../../assets/images/cover.jpg') center center no-repeat;
+    background-size: cover;
+    padding-top: 55%;
+}
+
+img.card-img-top{
+    width: 80%;
+}
+footer{
+    background-color: #222;
+    color: white;
+}
+section#whatwedo, div.container-fluid{
+    background-color: #9eadbc;
+}
